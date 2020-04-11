@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/newsChannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            app:drawableStartCompat="@drawable/ic_news"
+            android:drawablePadding="15dp"
+            tools:text="BBC News" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_blue"
+        android:layout_marginTop="6dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hotlines">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_hot1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:background="?selectableItemBackgroundBorderless"
+            app:layout_constraintStart_toStartOf="@id/constraint_hot1"
+            app:layout_constraintTop_toTopOf="@id/constraint_hot1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_iconfinder_left_arrow_back_2931162"
+                android:id="@+id/backArrow"/>
+
+        </FrameLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewHotline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:gravity="center"
+            android:text="@string/hotlines"
+            android:textColor="@color/light_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.517" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint_hot1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/hotlineState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        tools:text= "Lagos State"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/hotlineRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotlineState"
+        tools:text="South-West" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hotlineRegion"
+        app:layout_constraintVertical_bias="0.054">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/organiserBriefBioTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:maxLines="8"
+            android:padding="12sp"
+            android:text="@string/the_numbers_below_are_the_emergency_hotlines_assign_to_this_state_in_the_event_of_an_emergency_occuring_in_your_environment_kindly_dial_one_of_the_numbers_provided_please_ensure_these_numbers_are_dialed_only_when_there_is_the_need_to_the_general_hotline_number_is_responsibility_for_all_cases_of_the_covid_19_virus_in_the_country_isolate_yourself_and_stay_safe"
+            android:textColor="@color/black" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/statehotline1"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:drawableEnd="@drawable/ic_call_black_24dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            tools:text="0808185412928" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_blue"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/statehotline2"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:drawableEnd="@drawable/ic_call_black_24dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:text="0808185412928"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_blue"
+            android:layout_marginTop="10dp"/>
+
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_gravity="center"
+               android:padding="5dp"
+               android:text="@string/click_below_to_call_ncdc_toll_free_line"
+               android:textSize="20sp"
+               android:textColor="@color/black"
+               android:textStyle="italic"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/emergencyNumber"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:focusable="true">
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:srcCompat="@drawable/ic_emergency_call"/>
+           <androidx.appcompat.widget.AppCompatTextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:text="@string/toll_free_line"
+               android:textSize="20sp"
+               android:textColor="@color/black"
+               android:textStyle="bold"/>
+       </LinearLayout>
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

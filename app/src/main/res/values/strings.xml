@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Corona Virus Helplines</string>
+    <string name="home">Home</string>
+    <string name="search_for_your_state">Search for your state</string>
+    <string name="title_activity_hotlines">Hotlines</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hotlines">Hotlines</string>
+    <string name="the_numbers_below_are_the_emergency_hotlines_assign_to_this_state_in_the_event_of_an_emergency_occuring_in_your_environment_kindly_dial_one_of_the_numbers_provided_please_ensure_these_numbers_are_dialed_only_when_there_is_the_need_to_the_general_hotline_number_is_responsibility_for_all_cases_of_the_covid_19_virus_in_the_country_isolate_yourself_and_stay_safe">The numbers below are the emergency hotlines assign to this state. In the event of an emergency occuring in your environment kindly dial one of the numbers provided. Please ensure these numbers are dialed only when there is the need to. The general hotline number is responsibility for all cases of the COVID-19 virus in the country. Isolate yourself and stay safe.</string>
+    <string name="click_below_to_call_ncdc_toll_free_line">Click below to call NCDC Toll free line</string>
+    <string name="toll_free_line">080097000010</string>
+    <string name="news_page">News Page</string>
+    <string name="news">News</string>
+    <string name="tips">Prevention Tips</string>
+    <string name="wash_your_hands_frequently">Wash your hands frequently</string>
+    <string name="tip_one_body">Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.</string>
+    <string name="maintain_social_distancing">Maintain social distancing</string>
+    <string name="social_distancing_body">Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.</string>
+    <string name="avoid_touching_eyes_nose_and_mouth">Avoid touching eyes, nose and mouth</string>
+    <string name="hands_touch_many_surfaces_and_can_pick_up_viruses_once_contaminated_hands_can_transfer_the_virus_to_your_eyes_nose_or_mouth">Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth</string>
+</resources>

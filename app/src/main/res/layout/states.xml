@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/stateNumber"
+        tools:text="10."
+        android:padding="0dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/state"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:drawableEnd="@drawable/ic_more_black_24dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:text="Lagos" />
+
+    </LinearLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/light_blue"
+      android:layout_marginTop="12dp"/>
+
+
+
+
+
+</LinearLayout>
