@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
    @BindView(R.id.more)
     AppCompatImageView popMenu;
 
+   @BindView(R.id.testIcon)
+    AppCompatImageView testIcon;
+
     @Override
     protected void onCreate(Bundle savedInstanceStatesModel) {
         super.onCreate(savedInstanceStatesModel);
@@ -42,6 +45,12 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
 
         ButterKnife.bind(this);
         initRV();
+        testIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this  , test.class));
+            }
+        });
 
 
         searchEditText.addTextChangedListener(new TextWatcher() {

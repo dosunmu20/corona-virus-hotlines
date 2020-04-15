@@ -11,8 +11,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/customToolbar"
         android:layout_width="match_parent"
+        android:background="@color/white"
         android:layout_height="?attr/actionBarSize"
-        android:tag="sticky"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -42,6 +42,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textStyle="bold"
             android:text="@string/tips"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -50,11 +51,9 @@
             app:layout_constraintTop_toTopOf="parent"
             android:textColor="@color/light_blue"/>
 
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
     <View
-        android:id="@+id/divider_line"
+        android:id="@+id/tips_title_divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/light_blue"
@@ -67,12 +66,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@id/divider_line">
+        app:layout_constraintTop_toTopOf="@id/tips_title_divider">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@color/off_white">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -86,8 +86,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    >
+                    android:layout_height="100dp">
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/tipContentOneTitle"
@@ -232,7 +231,7 @@
                         android:textSize="15sp"
                         android:text="@string/hands_touch_many_surfaces_and_can_pick_up_viruses_once_contaminated_hands_can_transfer_the_virus_to_your_eyes_nose_or_mouth"
                         android:layout_marginEnd="5dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="2dp"
                         android:layout_marginBottom="5dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/imageView3"
@@ -241,6 +240,119 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="7.20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tipContentFourTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/practice_respiratory_hygiene"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="0dp"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintBottom_toBottomOf="@id/tipContentFour"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tipContentFour"
+                        app:layout_constraintTop_toTopOf="@+id/tipContentFour"
+                        app:layout_constraintVertical_bias="0.612"
+                        app:srcCompat="@drawable/ic_elbow" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tipContentFour"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="@string/good_respiratory_body"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                        app:layout_constraintStart_toStartOf="@id/tipContentFourTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tipContentFourTitle" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="7.20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tipContentFiveTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seek_early_medical_care"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintBottom_toBottomOf="@id/tipContentFive"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/tipContentFive"
+                        app:layout_constraintTop_toTopOf="@+id/tipContentFive"
+                        app:layout_constraintVertical_bias="0.612"
+                        app:srcCompat="@drawable/ic_doctor" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tipContentFive"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="If you have a fever, cough and difficulty breathing, seek medical attention, call in advance and stay at home."
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                        app:layout_constraintStart_toStartOf="@id/tipContentFiveTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tipContentFiveTitle" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
 
 
         </LinearLayout>
