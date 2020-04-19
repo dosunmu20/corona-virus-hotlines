@@ -47,6 +47,8 @@
             app:layout_constraintTop_toTopOf="@id/constraint_1">
 
             <androidx.appcompat.widget.AppCompatImageView
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:padding="10dp"

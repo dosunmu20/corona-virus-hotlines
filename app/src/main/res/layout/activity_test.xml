@@ -32,6 +32,8 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
+                android:focusable="true"
+                android:clickable="true"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/ic_iconfinder_left_arrow_back_2931162"
                 android:tint="@color/light_blue"
